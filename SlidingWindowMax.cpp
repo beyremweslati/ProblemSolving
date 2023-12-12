@@ -21,3 +21,15 @@ public:
         return ans;
     }
 };
+
+vector<int> nums = {1,3,-1,-3,5,3,6,7};
+vector<int> ans;
+int main(){
+    Solution sol;
+    int k = 3;
+    ans = sol.maxSlidingWindow(nums,k);
+    for(vector<int>::iterator it = ans.begin();it != ans.end(); it++){
+        cout << *it << " | ";
+    }
+    return 0;
+}
